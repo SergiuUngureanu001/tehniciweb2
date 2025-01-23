@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Wordle Game</title>
+  <link rel="stylesheet" href="wordle.css">
+</head>
+<body>
+  <h1>Wordle Game</h1>
+  <canvas id="wordleCanvas" width="300" height="400"></canvas>
+  <div id="keyboard"></div>
+  <input type="text" id="guessInput" maxlength="5" placeholder="Enter your guess" autocomplete="off">
+  <button id="submitGuess">Submit</button>
+
+  <div id="leaderboard" style="display: none;">
+    <h2>Leaderboard</h2>
+    <table id="leaderboardTable">
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Player</th>
+          <th>Guesses</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <button id="closeLeaderboard">Close</button>
+  </div>
+
+  <script src="wordle.js"></script>
+</body>
+</html>
